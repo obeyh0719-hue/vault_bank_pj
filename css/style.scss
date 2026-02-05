@@ -67,6 +67,23 @@ header {
         }
     }
 
+
+    .main_icon {
+        position: absolute;
+        z-index: 99;
+
+        ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        img {
+            width: 250px;
+
+        }
+
+    }
+
     .main_contens {
         position: absolute;
         top: 181px;

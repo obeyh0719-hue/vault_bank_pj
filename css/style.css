@@ -51,6 +51,17 @@ header #gnb li {
   height: 100%;
   opacity: 0.6;
 }
+#main_view .main_icon {
+  position: absolute;
+  z-index: 99;
+}
+#main_view .main_icon ul {
+  display: flex;
+  justify-content: center;
+}
+#main_view .main_icon img {
+  width: 250px;
+}
 #main_view .main_contens {
   position: absolute;
   top: 181px;

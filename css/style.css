@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+img,
+iframe,
+input,
+a {
+  vertical-align: top;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.inner {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+header .inner {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header #logo img {
+  width: 245px;
+  height: 30px;
+}
+header #gnb ul {
+  display: flex;
+}
+header #gnb li {
+  margin-left: 38px;
+}
+
+#main_view {
+  position: relative;
+}
+#main_view .main_bg img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+}
+#main_view .main_contens {
+  position: absolute;
+  top: 181px;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+}
+
+.main_contens2 {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 200px;
+  color: #8e9aaf;
+  font-weight: bold;
+}
+
+#c1 {
+  margin-top: 300px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+#c1 .c1_caption {
+  margin-bottom: 50px;
+}
+#c1 .c1_caption h3 {
+  color: #0052ff;
+  font-size: 40px;
+  font-weight: bold;
+}
+#c1 .c1_caption p {
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+}
+#c1 .c1_conbox {
+  display: flex;
+}
+#c1 .c1_conbox img {
+  box-shadow: 0 11px 5px #8e9aaf;
+}
+#c1 .c1_conbox ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 35px;
+  font-weight: bold;
+  font-size: 35px;
+}
+#c1 .c1_conbox span {
+  color: #0052ff;
+  font-weight: bold;
+  font-size: 35px;
+}
+#c1 .c1_conbox ul:nth-child(1),
+#c1 .c1_conbox ul:nth-child(3) {
+  align-items: center;
+}
+#c1 .c1_conbox ul:nth-child(1) img,
+#c1 .c1_conbox ul:nth-child(3) img {
+  width: 400px;
+  height: 600px;
+}
+#c1 .c1_conbox ul:nth-child(1) {
+  margin-right: 25px;
+}
+#c1 .c1_conbox ul:nth-child(2) img {
+  margin: 0 25px;
+  width: 500px;
+  height: 750px;
+}
+#c1 .c1_conbox ul:nth-child(3) {
+  margin-left: 25px;
+}
+
+.c1_bgbox {
+  position: absolute;
+  background-color: #8e9aaf;
+  width: 100%;
+  height: 650px;
+  opacity: 0.3;
+  z-index: -1;
+  left: 0;
+  transform: translateY(-115.5%);
+}
+
+#c2 {
+  margin-top: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#c2 .c2_caption h3 {
+  color: #0052ff;
+  font-size: 40px;
+  font-weight: bold;
+}
+#c2 .c2_caption p {
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+}
+#c2 .c2_img {
+  display: flex;
+  gap: 160px;
+}
+#c2 .c2_img img {
+  height: 400px;
+}
+
+#c3 {
+  margin-top: 300px;
+  position: relative;
+}
+#c3 .c3_caption h3 {
+  color: #0052ff;
+  font-size: 40px;
+  font-weight: bold;
+}
+#c3 .c3_caption p {
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+}
+#c3 .c3_icon {
+  margin-top: 100px;
+}
+#c3 .c3_icon ul {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+#c3 .c3_icon img {
+  width: 300px;
+  height: 300px;
+}
+
+.c3_bgbox {
+  margin-top: 50px;
+  position: absolute;
+  background-color: #0052ff;
+  width: 100%;
+  height: 400px;
+  opacity: 0.5;
+  z-index: -1;
+  left: 0;
+  transform: translateY(-100%);
+}
+
+.c3_endcaption {
+  margin-top: 77px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #8e9aaf;
+  text-align: center;
+}
+
+#c4 {
+  margin-top: 300px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  text-align: center;
+}
+#c4 img {
+  position: absolute;
+  height: 300px;
+  z-index: -1;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.3;
+}
+#c4 span {
+  position: relative;
+  color: #0052ff;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+#c4 p {
+  position: relative;
+  z-index: 1;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#c5 {
+  margin-top: 300px;
+}
+#c5 .c5_caption h3 {
+  color: #0052ff;
+  font-size: 40px;
+  font-weight: bold;
+}
+#c5 .c5_caption p {
+  font-weight: bold;
+  font-size: 20px;
+}
+#c5 .c5_icon {
+  margin-top: 50px;
+}
+#c5 .c5_icon ul {
+  display: flex;
+  justify-content: space-between;
+}
+#c5 .c5_icon img {
+  width: 320px;
+  height: 320px;
+}
+
+footer {
+  background: #8e9aaf;
+  width: 100%;
+  height: 250px;
+}
+footer .ft_inner {
+  margin: 0 auto;
+}/*# sourceMappingURL=style.css.map */

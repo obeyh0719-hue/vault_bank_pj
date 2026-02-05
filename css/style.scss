@@ -347,6 +347,17 @@ footer {
     height: 250px;
 }
 
+footer .inner {
+    height: 100%;
+    margin: 0 auto;
+}
+
+.ft_inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
 .ft_inner p {
-    margin-top: 20px;
+    margin: 0;
 }

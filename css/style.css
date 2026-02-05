@@ -272,6 +272,18 @@ footer {
   width: 100%;
   height: 250px;
 }
-footer .ft_inner {
+
+footer .inner {
+  height: 100%;
   margin: 0 auto;
+}
+
+.ft_inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.ft_inner p {
+  margin: 0;
 }/*# sourceMappingURL=style.css.map */

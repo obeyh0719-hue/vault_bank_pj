@@ -38,9 +38,36 @@ header #logo img {
 }
 header #gnb ul {
   display: flex;
+  gap: 20px;
 }
 header #gnb li {
-  margin-left: 38px;
+  position: relative;
+  margin: 0 10px;
+}
+header #gnb .sub {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  display: none;
+  z-index: 100;
+  flex-direction: column;
+  min-width: 150px;
+  background: #8e9aaf;
+  border-radius: 12px;
+}
+header #gnb .sub li {
+  margin: 10px 0;
+}
+header #gnb > ul > li:hover ul.sub {
+  display: block;
+  opacity: 0.3;
+}
+header #gnb > ul > li ul.sub > li:hover {
+  opacity: 1;
+  color: #0052ff;
+  background: #fff;
 }
 
 #main_view {

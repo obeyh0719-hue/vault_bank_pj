@@ -7,6 +7,7 @@
     <title>Vault bank</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/projectnoonnu/2503@1.0/KakaoSmallSans-Regular.woff2">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/stylewheel.css">
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
 
@@ -14,6 +15,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
     <!-- ScrollSmoother requires ScrollTrigger -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>
+
 </head>
 
 <body>
@@ -60,15 +62,23 @@
 
             <main>
                 <section id="main_view">
-                    <div class="main_icon">
-                        <ul>
-                            <li><img src="./main_images/main_icon1.png" alt=""></li>
-                            <li><img src="./main_images/main_icon2.png" alt=""></li>
-                            <li><img src="./main_images/main_icon3.png" alt=""></li>
-                            <li><img src="./main_images/main_icon4.png" alt=""></li>
-                            <li><img src="./main_images/main_icon5.png" alt=""></li>
-                            <li><img src="./main_images/main_icon6.png" alt=""></li>
-                            <li><img src="./main_images/main_icon7.png" alt=""></li>
+                    <div class="main_icon logo-wheel" data-direction="right" data-radius="70"
+                    aria-label="Partner logos carousel — circular">
+                        <ul class="wheel">
+                            <li class="wheel-item" data-tooltip="Logo Tooltip"><img src="./main_images/main_icon1.png"
+                                    alt=""></li>
+                            <li class="wheel-item" data-tooltip="Logo Tooltip"><img src="./main_images/main_icon2.png"
+                                    alt=""></li>
+                            <li class="wheel-item" data-tooltip="Logo Tooltip"><img src="./main_images/main_icon3.png"
+                                    alt=""></li>
+                            <li class="wheel-item" data-tooltip="Logo Tooltip"><img src="./main_images/main_icon4.png"
+                                    alt=""></li>
+                            <li class="wheel-item" data-tooltip="Logo Tooltip"><img src="./main_images/main_icon5.png"
+                                    alt=""></li>
+                            <li class="wheel-item" data-tooltip="Logo Tooltip"><img src="./main_images/main_icon6.png"
+                                    alt=""></li>
+                            <li class="wheel-item" data-tooltip="Logo Tooltip"><img src="./main_images/main_icon7.png"
+                                    alt=""></li>
                         </ul>
                     </div>
                     <div class="main_bg"><img src="./main_images/bg.png" alt="배경이미지"></div>
@@ -195,7 +205,7 @@
         </div>
     </div>
 
-
+    <script src="./js/scriptwheel.js"></script>
     <script src="./js/script.js"></script>
 
 </body>

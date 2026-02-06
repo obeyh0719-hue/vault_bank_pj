@@ -51,6 +51,7 @@ header {
         li {
             position: relative;
             margin: 0 10px;
+            font-weight: bold;
         }
 
         .sub {
@@ -64,24 +65,30 @@ header {
             flex-direction: column;
             min-width: 150px;
             background: #8e9aaf;
+            opacity: 0.8;
             border-radius: 12px;
+            transition: all 0.3s;
 
             li {
-                margin: 10px 0;
-
+                margin: 5px 0px;
+                padding: 10px 10px;
+                opacity: 1;
+               
             }
         }
     }
 
     #gnb>ul>li:hover ul.sub {
         display: block;
-        opacity: 0.3;
+        transition: all 0.5s;
+
     }
 
     #gnb>ul>li ul.sub>li:hover {
-        opacity: 1;
-        color:  #0052ff;
+        color: #0052ff;
         background: #fff;
+        transition: all 0.5s;
+
     }
 }
 
@@ -105,6 +112,10 @@ header {
     .main_icon {
         position: absolute;
         z-index: 99;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        
 
         ul {
             display: flex;

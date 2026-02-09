@@ -16,69 +16,64 @@
     <!-- ScrollSmoother requires ScrollTrigger -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
 </head>
 
 <body>
+    <header>
+        <div class="inner">
+            <div id="logo">
+                <h1><a href="#"><img src="/object/s_logo.png" alt=""></a></h1>
+            </div>
+            <nav id="gnb">
+                <ul>
+                    <li><a href="#">회사소개</a>
+                        <ul class="sub">
+                            <li><a href="#">CEO 소개</a></li>
+                            <li><a href="#">조직도</a></li>
+                            <li><a href="#">찾아오시는 길</a></li>
+                            <li><a href="#">회사 연혁</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">공지사항</a>
+                        <ul class="sub">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">사회활동</a></li>
+                            <li><a href="#">갤러리</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">고객센터</a>
+                        <ul class="sub">
+                            <li><a href="#">카카오채널</a></li>
+                            <li><a href="#">C/S 팀</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">채용</a>
+                        <ul class="sub">
+                            <li><a href="#">공고</a></li>
+                            <li><a href="#">유의사항</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div><!--inner end-->
+    </header><!--header end-->
+
     <div id="smooth-wrapper">
         <div id="smooth-content">
-            <header>
-                <div class="inner">
-                    <div id="logo">
-                        <h1><a href="#"><img src="/object/s_logo.png" alt=""></a></h1>
-                    </div>
-                    <nav id="gnb">
-                        <ul>
-                            <li><a href="#">회사소개</a>
-                                <ul class="sub">
-                                    <li><a href="#">CEO 소개</a></li>
-                                    <li><a href="#">조직도</a></li>
-                                    <li><a href="#">찾아오시는 길</a></li>
-                                    <li><a href="#">회사 연혁</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">공지사항</a>
-                                <ul class="sub">
-                                    <li><a href="#">공지사항</a></li>
-                                    <li><a href="#">사회활동</a></li>
-                                    <li><a href="#">갤러리</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">고객센터</a>
-                                <ul class="sub">
-                                    <li><a href="#">카카오채널</a></li>
-                                    <li><a href="#">C/S 팀</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">채용</a>
-                                <ul class="sub">
-                                    <li><a href="#">공고</a></li>
-                                    <li><a href="#">유의사항</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
-                </div><!--inner end-->
-            </header><!--header end-->
-
             <main>
                 <section id="main_view">
-                    <div class="main_icon logo-wheel" data-direction="right" data-radius="70"
-                    aria-label="Partner logos carousel — circular">
+                    <div class="main_icon">
                         <ul class="wheel">
-                            <li class="wheel-item" data-tooltip="Logo Tooltip"><img src="./main_images/main_icon1.png"
-                                    alt=""></li>
-                            <li class="wheel-item" data-tooltip="Logo Tooltip"><img src="./main_images/main_icon2.png"
-                                    alt=""></li>
-                            <li class="wheel-item" data-tooltip="Logo Tooltip"><img src="./main_images/main_icon3.png"
-                                    alt=""></li>
-                            <li class="wheel-item" data-tooltip="Logo Tooltip"><img src="./main_images/main_icon4.png"
-                                    alt=""></li>
-                            <li class="wheel-item" data-tooltip="Logo Tooltip"><img src="./main_images/main_icon5.png"
-                                    alt=""></li>
-                            <li class="wheel-item" data-tooltip="Logo Tooltip"><img src="./main_images/main_icon6.png"
-                                    alt=""></li>
-                            <li class="wheel-item" data-tooltip="Logo Tooltip"><img src="./main_images/main_icon7.png"
-                                    alt=""></li>
+                            <li class="wheel-item"><img src="./main_images/main_icon1.png" alt=""></li>
+                            <li class="wheel-item"><img src="./main_images/main_icon2.png" alt=""></li>
+                            <li class="wheel-item"><img src="./main_images/main_icon3.png" alt=""></li>
+                            <li class="wheel-item"><img src="./main_images/main_icon4.png" alt=""></li>
+                            <li class="wheel-item"><img src="./main_images/main_icon5.png" alt=""></li>
+                            <li class="wheel-item"><img src="./main_images/main_icon6.png" alt=""></li>
+                            <li class="wheel-item"><img src="./main_images/main_icon7.png" alt=""></li>
                         </ul>
                     </div>
                     <div class="main_bg"><img src="./main_images/bg.png" alt="배경이미지"></div>
@@ -101,21 +96,23 @@
                         </div>
                         <div class="c1_conbox">
                             <ul>
-                                <li><img src="./object/mid_pic1.png" alt="신분증 사진"></li>
-                                <li><span>신분증</span>하나로</li>
+                                <li><img class="c1_1" src="./object/mid_pic1.png" alt="신분증 사진"></li>
+                                <li class="c1_1"><span>신분증</span>하나로</li>
                             </ul>
                             <ul>
-                                <li><span>자산</span>모으고</li>
-                                <li><img src="./object/mid_pic2.png" alt="신분증 사진"></li>
+                                <li class="c1_2"><span>자산</span>모으고</li>
+                                <li><img class="c1_2" src="./object/mid_pic2.png" alt="신분증 사진"></li>
                             </ul>
                             <ul>
-                                <li><img src="./object/mid_pic3.png" alt="신분증 사진"></li>
-                                <li><span>손쉬운</span>사용</li>
+                                <li><img class="c1_3" src="./object/mid_pic3.png" alt="신분증 사진"></li>
+                                <li class="c1_3"><span>손쉬운</span>사용</li>
                             </ul>
                         </div>
                     </section>
                     <div class="c1_bgbox"></div>
                 </div><!--c1 끝-->
+
+
 
                 <div class="inner">
                     <section id="c2">
@@ -123,10 +120,12 @@
                             <h3>홈.home</h3>
                             <p>Simply safe,<br>Vault Bank<br>쉽고,안전하게</p>
                         </div>
-                        <div class="c2_img">
-                            <img src="./object/home_p1.png" alt="">
-                            <img src="./object/home_p2.png" alt="">
-                            <img src="./object/home_p3.png" alt="">
+                        <div class="c2_img swiper">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide"><img src="./object/home_p1.png" alt=""></li>
+                                <li class="swiper-slide"><img src="./object/home_p2.png" alt=""></li>
+                                <li class="swiper-slide"><img src="./object/home_p3.png" alt=""></li>
+                            </ul>
                         </div>
                     </section>
                 </div><!--c2 끝-->
@@ -168,8 +167,35 @@
                 <div class="inner">
                     <section id="c4">
                         <div class="finger">
-                            <img src="./object/mid_finger.png" alt="지문인식">
-                            <p><span>결제.Pay</span><br>망설임 없는 결제,<br>보안은 Vault가 책임지니까.</p>
+                            <p class="finger_1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 348.19 433.33">
+                                    <path class="cls-1" d="M33.83,69.28C23.83,72.33,159-57,303,58.28" />
+                                    <path class="cls-1" d="M19.22,147c4,4.15,133-213.26,296.87-17.22" />
+                                    <path class="cls-1"
+                                        d="M10.35,219l29.74-27.13s51.13-120.52,167-97.57,88.17,156,88.17,156l-5.74,48.52s17.22,49.57,33.39,49.57" />
+                                    <path class="cls-1" d="M326.53,166.28s24,93.39,2.08,134.61" />
+                                    <path class="cls-1"
+                                        d="M15.05,272.2,73,227.33s41.22-120.53,128.35-89.22,50.61,125.22,50.61,125.22S231.55,362.46,303,381.76" />
+                                    <path class="cls-1"
+                                        d="M10.35,332.72,94.87,267.5S134.2,181,175.69,178.8c38.14-2,51.71,41.07,39.71,71.48-7.2,18.25-49.57,78.26-64.18,87.66s-84,67.82-84,67.82" />
+                                    <path class="cls-1" d="M34.35,373.94s131.37-97.57,141.34-149.22" />
+                                    <path class="cls-1" d="M211.22,318.11S190.87,382.28,242,405.76" />
+                                    <path class="cls-1" d="M116.31,415.15s50.56-70.43,78.22,7.83" />
+                                </svg></p>
+                            <p class="finger_2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 348.19 433.33">
+                                    <path class="full cls-1" d="M33.83,69.28C23.83,72.33,159-57,303,58.28" />
+                                    <path class="full cls-1" d="M19.22,147c4,4.15,133-213.26,296.87-17.22" />
+                                    <path class="full cls-1"
+                                        d="M10.35,219l29.74-27.13s51.13-120.52,167-97.57,88.17,156,88.17,156l-5.74,48.52s17.22,49.57,33.39,49.57" />
+                                    <path class="full cls-1" d="M326.53,166.28s24,93.39,2.08,134.61" />
+                                    <path class="full cls-1"
+                                        d="M15.05,272.2,73,227.33s41.22-120.53,128.35-89.22,50.61,125.22,50.61,125.22S231.55,362.46,303,381.76" />
+                                    <path class="full cls-1"
+                                        d="M10.35,332.72,94.87,267.5S134.2,181,175.69,178.8c38.14-2,51.71,41.07,39.71,71.48-7.2,18.25-49.57,78.26-64.18,87.66s-84,67.82-84,67.82" />
+                                    <path class="full cls-1" d="M34.35,373.94s131.37-97.57,141.34-149.22" />
+                                    <path class="full cls-1" d="M211.22,318.11S190.87,382.28,242,405.76" />
+                                    <path class="full cls-1" d="M116.31,415.15s50.56-70.43,78.22,7.83" />
+                                </svg></p>
+                            <p class="f_caption"><span>결제.Pay</span><br>망설임 없는 결제,<br>보안은 Vault가 책임지니까.</p>
                         </div>
                     </section>
                 </div>
@@ -205,8 +231,10 @@
         </div>
     </div>
 
-    <script src="./js/scriptwheel.js"></script>
+
     <script src="./js/script.js"></script>
+
+
 
 </body>
 

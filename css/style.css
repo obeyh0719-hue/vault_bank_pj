@@ -26,6 +26,11 @@ a {
   box-sizing: border-box;
 }
 
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+}
 header .inner {
   height: 100px;
   display: flex;
@@ -76,7 +81,12 @@ header #gnb > ul > li ul.sub > li:hover {
 }
 
 #main_view {
+  height: 100vh;
   position: relative;
+  overflow: hidden;
+}
+#main_view .main_bg {
+  height: 100%;
 }
 #main_view .main_bg img {
   width: 100%;
@@ -88,18 +98,20 @@ header #gnb > ul > li ul.sub > li:hover {
   z-index: 99;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0%);
+  border: 1px solid #000;
 }
-#main_view .main_icon ul {
+#main_view .main_icon .wheel {
   display: flex;
   justify-content: center;
 }
-#main_view .main_icon img {
-  width: 250px;
+#main_view .main_icon .wheel img {
+  width: 300px;
 }
 #main_view .main_contens {
   position: absolute;
-  top: 181px;
+  margin: 0 auto;
+  top: 50%;
   width: 100%;
   text-align: center;
   font-size: 30px;
@@ -201,8 +213,9 @@ header #gnb > ul > li ul.sub > li:hover {
   font-weight: bold;
 }
 #c2 .c2_img {
-  display: flex;
+  width: 192px;
   gap: 160px;
+  margin: 0 200px 0 0;
 }
 #c2 .c2_img img {
   height: 400px;
@@ -258,21 +271,35 @@ header #gnb > ul > li ul.sub > li:hover {
 }
 
 #c4 {
-  margin-top: 300px;
-  display: flex;
+  margin-top: 400px;
   position: relative;
   flex-direction: column;
   text-align: center;
+  height: -moz-fit-content;
+  height: fit-content;
 }
-#c4 img {
+#c4 svg {
+  width: 300px;
+}
+#c4 .cls-1 {
+  fill: none;
+  stroke: #8e9aaf;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  stroke-width: 20.7px;
+}
+#c4 .finger_1 {
+  width: 100%;
+  opacity: 0.5;
+}
+#c4 .finger_2 {
   position: absolute;
-  height: 300px;
-  z-index: -1;
-  align-items: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0.3;
+  width: 100%;
+  top: 0;
+  opacity: 0.5;
+}
+#c4 .finger_2 .cls-1 {
+  stroke: #0052ff;
 }
 #c4 span {
   position: relative;
@@ -281,16 +308,20 @@ header #gnb > ul > li ul.sub > li:hover {
   font-weight: bold;
   text-align: center;
 }
-#c4 p {
-  position: relative;
+#c4 .f_caption {
+  position: absolute;
   z-index: 1;
   font-size: 30px;
   font-weight: bold;
   text-align: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  align-content: center;
 }
 
 #c5 {
-  margin-top: 300px;
+  margin-top: 400px;
 }
 #c5 .c5_caption h3 {
   color: #0052ff;
@@ -308,12 +339,16 @@ header #gnb > ul > li ul.sub > li:hover {
   display: flex;
   justify-content: space-between;
 }
+#c5 .c5_icon li {
+  box-shadow: 0 10px 0px #000;
+}
 #c5 .c5_icon img {
   width: 320px;
   height: 320px;
 }
 
 footer {
+  margin-top: 200px;
   background: #8e9aaf;
   width: 100%;
   height: 250px;

@@ -30,6 +30,10 @@ a {
 
 
 header {
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+
     .inner {
         height: 100px;
         display: flex;
@@ -73,7 +77,7 @@ header {
                 margin: 5px 0px;
                 padding: 10px 10px;
                 opacity: 1;
-               
+
             }
         }
     }
@@ -98,13 +102,18 @@ header {
 
 #main_view {
 
+    height: 100vh;
     position: relative;
+    overflow: hidden;
 
     .main_bg {
+        height: 100%;
+
         img {
             width: 100%;
             height: 100%;
             opacity: 0.6;
+
         }
     }
 
@@ -114,24 +123,26 @@ header {
         z-index: 99;
         left: 50%;
         top: 50%;
-        transform: translate(-50%,-50%);
-        
+        transform: translate(-50%, 0%);
+        border: 1px solid #000;
 
-        ul {
+
+        .wheel {
             display: flex;
             justify-content: center;
-        }
 
-        img {
-            width: 250px;
-
+            img {
+                width: 300px;
+            }
         }
 
     }
 
+
     .main_contens {
         position: absolute;
-        top: 181px;
+        margin: 0 auto;
+        top: 50%;
         width: 100%;
         text-align: center;
         font-size: 30px;
@@ -261,12 +272,12 @@ header {
     }
 
     .c2_img {
-        display: flex;
+        width: 192px;
         gap: 160px;
+        margin: 0 200px 0 0;
 
         img {
             height: 400px;
-
         }
     }
 }
@@ -332,24 +343,44 @@ header {
 //c3 끝
 
 
+
+
 #c4 {
 
-    margin-top: 300px;
-    display: flex;
+    margin-top: 400px;
     position: relative;
     flex-direction: column;
     text-align: center;
+    height: fit-content;
 
-    img {
-        position: absolute;
-        height: 300px;
-        z-index: -1;
-        align-items: center;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        opacity: 0.3;
+    svg {
+        width: 300px;
     }
+
+    .cls-1 {
+        fill: none;
+        stroke: #8e9aaf;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 20.7px;
+    }
+
+    .finger_1 {
+        width: 100%;
+        opacity: 0.5;
+    }
+
+    .finger_2 {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        opacity: 0.5;
+
+        .cls-1 {
+            stroke: #0052ff;
+        }
+    }
+
 
     span {
         position: relative;
@@ -359,19 +390,25 @@ header {
         text-align: center;
     }
 
-    p {
-        position: relative;
+    .f_caption {
+        position: absolute;
         z-index: 1;
         font-size: 30px;
         font-weight: bold;
         text-align: center;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        align-content: center;
     }
 }
+
+
 
 //c4 끝
 
 #c5 {
-    margin-top: 300px;
+    margin-top: 400px;
 
     .c5_caption {
         h3 {
@@ -394,6 +431,10 @@ header {
             justify-content: space-between;
         }
 
+        li {
+            box-shadow: 0 10px 0px #000;
+        }
+
         img {
             width: 320px;
             height: 320px;
@@ -404,6 +445,7 @@ header {
 //c5 끝
 
 footer {
+    margin-top: 200px;
     background: #8e9aaf;
     width: 100%;
     height: 250px;

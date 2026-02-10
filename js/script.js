@@ -35,7 +35,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const finger = gsap.timeline({
         scrollTrigger: {
             trigger: "#c4",
-          
             start: "top 50%",
             end: "bottom 50%",
             scrub: 1,

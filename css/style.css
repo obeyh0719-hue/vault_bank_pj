@@ -117,19 +117,23 @@ header #gnb > ul > li ul.sub > li:hover {
   top: 30%;
   width: 100%;
   text-align: center;
-  font-size: 30px;
+  font-size: 40px;
+  color: #fff;
+}
+#main_view .main_contens h2 p {
+  color: #0052ff;
 }
 
 .main_contens2 {
   font-size: 20px;
   text-align: center;
-  margin-top: 200px;
+  margin-top: 300px;
   color: #8e9aaf;
   font-weight: bold;
 }
 
 #c1 {
-  margin-top: 200px;
+  margin-top: 700px;
   justify-content: space-between;
   align-items: center;
 }

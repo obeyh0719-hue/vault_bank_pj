@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
             trigger: "#c1",
             markers: false,
             start: "top 20%",
-            // end:"+=10000",
             toggleActions: "play none reset none",
         }
 
@@ -36,9 +35,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const finger = gsap.timeline({
         scrollTrigger: {
             trigger: "#c4",
-            markers: true,
+          
             start: "top 50%",
-            end: "bottom 60%",
+            end: "bottom 50%",
             scrub: 1,
         }
     });
@@ -77,6 +76,8 @@ gsap.to(".wheel-item", {
     },
 
 });
+
+
 
 
 

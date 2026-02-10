@@ -120,12 +120,16 @@ header #gnb > ul > li ul.sub > li:hover {
   font-size: 40px;
   color: #fff;
 }
+#main_view .main_contens h2 {
+  text-shadow: 0 2px 20px #000;
+}
 #main_view .main_contens h2 p {
+  text-shadow: 0 2px 10px #0052ff;
   color: #0052ff;
 }
 
 .main_contens2 {
-  font-size: 20px;
+  font-size: 30px;
   text-align: center;
   margin-top: 300px;
   color: #8e9aaf;

@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         scrollTrigger: {
             trigger: "#c4",
             start: "top 50%",
-            end: "bottom 50%",
+            end: "bottom 80%",
             scrub: 1,
         }
     });
@@ -75,6 +75,8 @@ gsap.to(".wheel-item", {
     },
 
 });
+
+
 
 
 

@@ -60,7 +60,7 @@ var swiper = new Swiper(".swiper", {
 });
 
 gsap.to(".wheel-item", {
-    loop: true,
+    repeat: -1,
     keyframes: {
         y: [0, 80, -10, 30, 0],
         ease: "none", // <- ease across the entire set of keyframes (defaults to the one defined in the tween, or "none" if one isn't defined there)
@@ -76,8 +76,48 @@ gsap.to(".wheel-item", {
 
 });
 
+const gnb = document.querySelector('#gnb');
+const btn = document.querySelector('#hamburger');
+const mainLinks = document.querySelectorAll('#gnb > ul > li > a');
+btn.onclick = function (e) {
+    e.preventDefault();
+    e.stopPropagation();
 
 
+    gnb.classList.toggle('on');
+};
+
+
+mainLinks.forEach(link => {
+    link.onclick = function (e) {
+        if (window.innerWidth <= 1024) {
+            const subMenu = this.nextElementSibling;
+
+            if (subMenu && subMenu.classList.contains('sub')) {
+
+                e.preventDefault();
+                e.stopPropagation();
+
+                // 이미 열려있는 다른 서브메뉴를 닫고 싶다면 아래 코드 활성화 (선택)
+                /*
+                document.querySelectorAll('.sub').forEach(s => {
+                    if(s !== subMenu) s.classList.remove('active');
+                });
+                */
+
+                subMenu.classList.toggle('active');
+            }
+        }
+    };
+});
+
+// 3. 외부 영역 클릭 시 메뉴 닫기 (이걸 넣어줘야 꼬이지 않음)
+document.addEventListener('click', (e) => {
+    if (!gnb.contains(e.target) && gnb.classList.contains('on')) {
+        gnb.classList.remove('on');
+        document.querySelectorAll('.sub').forEach(s => s.classList.remove('active'));
+    }
+});
 
 
 
